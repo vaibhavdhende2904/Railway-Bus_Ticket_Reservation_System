@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home - Ticket Reservation System</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+
+<div class="navbar">
+    <h2>Ticket Reservation System</h2>
+
+    <div class="nav-links">
+        <a href="/buses">Buses</a>
+        <a href="/trains">Trains</a>
+        <a href="/bookings">My Bookings</a>
+        <a href="/logout" class="logout-btn">Logout</a>
+    </div>
+</div>
+
+<div class="center-box">
+    <h1>Welcome, {{ username }} 👋</h1>
+    <p>Select an option below:</p>
+
+    <div class="button-group">
+        <a href="/buses" class="btn">View Buses</a>
+        <a href="/trains" class="btn">View Trains</a>
+        <a href="/bookings" class="btn">My Bookings</a>
+    </div>
+</div>
+
+</body>
+</html>

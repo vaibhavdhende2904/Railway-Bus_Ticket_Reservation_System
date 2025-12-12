@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Available Trains</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+
+<div class="navbar">
+    <h2>Trains</h2>
+    <a href="/" class="back-btn">Home</a>
+</div>
+
+<div class="list-container">
+    <h2>Available Train Services</h2>
+
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Source</th>
+            <th>Destination</th>
+            <th>Seats</th>
+            <th>Price</th>
+            <th>Action</th>
+        </tr>
+
+        {% for t in trains %}
+        <tr>
+            <td>{{ t.name }}</td>
+            <td>{{ t.source }}</td>
+            <td>{{ t.destination }}</td>
+            <td>{{ t.seats }}</td>
+            <td>₹{{ t.price }}</td>
+            <td><a class="btn-small" href="/book_train/{{ t.id }}">Book</a></td>
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+
+</body>
+</html>

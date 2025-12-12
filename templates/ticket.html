@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ticket</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <style>
+        .ticket {
+            width: 350px;
+            margin: auto;
+            padding: 20px;
+            border: 2px dashed #333;
+            background: #f7f7f7;
+            border-radius: 10px;
+            text-align: center;
+        }
+        h2 {margin-bottom: 5px;}
+    </style>
+</head>
+
+<body>
+    <div class="ticket">
+        <h2>Travel Ticket</h2>
+        <hr>
+
+        <p><strong>User:</strong> {{ booking.user }}</p>
+        <p><strong>Transport:</strong> {{ booking.transport_name }} ({{ booking.transport_type }})</p>
+        <p><strong>From:</strong> {{ booking.source }}</p>
+        <p><strong>To:</strong> {{ booking.destination }}</p>
+        <p><strong>Seats:</strong> {{ booking.seats }}</p>
+        <p><strong>Total Price:</strong> ₹{{ booking.total_price }}</p>
+        <p><strong>Status:</strong> {{ booking.status }}</p>
+
+        <hr>
+        <button onclick="window.print()">Print Ticket</button>
+    </div>
+</body>
+</html>

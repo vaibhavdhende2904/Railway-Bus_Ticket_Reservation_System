@@ -1,0 +1,211 @@
+/* ================================
+   GLOBAL PAGE STYLES
+================================= */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #f4f7fb;
+}
+
+/* ================================
+   NAVBAR
+================================= */
+.navbar {
+    background: #0066ff;
+    color: white;
+    padding: 15px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar h2 {
+    margin: 0;
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.nav-links a,
+.back-btn,
+.logout-btn {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.logout-btn {
+    background: #ff3b3b;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+
+.back-btn {
+    background: #333;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+
+/* ================================
+   AUTH PAGES (LOGIN & REGISTER)
+================================= */
+.auth-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #e8f0ff;
+}
+
+.auth-card {
+    background: white;
+    padding: 30px 40px;
+    width: 350px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+.auth-card h2 {
+    margin-bottom: 20px;
+    color: #0066ff;
+}
+
+.auth-card input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid #aaa;
+    font-size: 15px;
+}
+
+.btn-primary {
+    width: 100%;
+    padding: 12px;
+    background: #0066ff;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.btn-primary:hover {
+    background: #0054d4;
+}
+
+.auth-link {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+/* ================================
+   HOME PAGE
+================================= */
+.center-box {
+    width: 60%;
+    margin: 60px auto;
+    background: white;
+    padding: 40px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
+}
+
+.center-box h1 {
+    color: #0066ff;
+}
+
+.button-group {
+    margin-top: 30px;
+}
+
+.btn {
+    background: #0066ff;
+    color: white;
+    padding: 12px 25px;
+    margin: 10px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 16px;
+    display: inline-block;
+}
+
+.btn:hover {
+    background: #004fcc;
+}
+
+/* ================================
+   TABLE LIST PAGES (BUSES/TRAINS)
+================================= */
+.list-container {
+    width: 90%;
+    margin: 40px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+table th {
+    background: #0066ff;
+    color: white;
+    padding: 12px;
+    font-size: 15px;
+}
+
+table td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+.btn-small {
+    background: #009933;
+    padding: 7px 12px;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.btn-small:hover {
+    background: #007a29;
+}
+
+/* ================================
+   BOOKING INPUT FORMS
+================================= */
+.center-box form input {
+    width: 60%;
+    padding: 12px;
+    margin: 15px 0;
+    border-radius: 8px;
+    border: 1px solid #aaa;
+    font-size: 16px;
+}
+
+/* ================================
+   RESPONSIVE DESIGN
+================================= */
+@media (max-width: 768px) {
+    .center-box {
+        width: 90%;
+    }
+
+    .auth-card {
+        width: 90%;
+    }
+
+    table th, table td {
+        font-size: 13px;
+        padding: 8px;
+    }
+}

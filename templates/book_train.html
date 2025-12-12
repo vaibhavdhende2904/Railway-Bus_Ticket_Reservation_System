@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Book Train</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+
+<div class="navbar">
+    <h2>Book Train</h2>
+    <a href="/trains" class="back-btn">Back</a>
+</div>
+
+<div class="center-box">
+    <h2>{{ train.name }}</h2>
+    <p>{{ train.source }} ➜ {{ train.destination }}</p>
+
+    <form method="POST">
+        <input type="number" name="seats" min="1" max="{{ train.seats }}" placeholder="Number of seats" required>
+
+        <button class="btn-primary" type="submit">Confirm Booking</button>
+    </form>
+</div>
+
+</body>
+</html>

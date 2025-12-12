@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Available Buses</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+
+<div class="navbar">
+    <h2>Buses</h2>
+    <a href="/" class="back-btn">Home</a>
+</div>
+
+<div class="list-container">
+    <h2>Available Bus Services</h2>
+
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Source</th>
+            <th>Destination</th>
+            <th>Seats</th>
+            <th>Price</th>
+            <th>Action</th>
+        </tr>
+
+        {% for b in buses %}
+        <tr>
+            <td>{{ b.name }}</td>
+            <td>{{ b.source }}</td>
+            <td>{{ b.destination }}</td>
+            <td>{{ b.seats }}</td>
+            <td>₹{{ b.price }}</td>
+            <td><a class="btn-small" href="/book_bus/{{ b.id }}">Book</a></td>
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+
+</body>
+</html>
